@@ -6,7 +6,7 @@ from ppc_optimizer_lib import load_config, calculate_metrics  # 保持与你现�
 
 st.set_page_config(page_title="Amazon PPC Optimizer", layout="wide")
 
-st.title("📊 Amazon 广告优化工具（带进度显示）")
+st.title("📊 SZZ Amazon 广告优化工具")
 st.markdown("""
 📥 **先从 Seller Central 导出 Sponsored Products 搜索词报告**（Search Term Report，30–60 天），再上传文件。  
 获取路径（新版界面）：**Advertising → Campaign Manager → Reports/Measurement → Advertising reports → Create report → Sponsored Products → Search term**  
