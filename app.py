@@ -8,7 +8,7 @@ from ppc_optimizer_lib import load_config, calculate_metrics
 
 st.set_page_config(page_title="Amazon PPC Optimizer", layout="wide")
 
-st.title("📊 Amazon 广告优化工具（带早期否定 & 词库建议）")
+st.title("📊 SZZ Amazon 广告优化工具（早期否定 & 词库建议）")
 st.markdown("""
 📥 **请先从 Seller Central 导出 Sponsored Products · Search Term Report（30–60天）** 后上传。  
 运行流程：**接收 → 解析 → 分析 → 导出**。在数据很少/无转化时，也会给出**早期否定词建议**与**词库更新建议**。
