@@ -1,0 +1,16 @@
+# 广告优化配置参数
+
+target_acos: 0.30           # 目标 ACOS（例如 30%）
+bid_increase_step: 0.15     # 满足条件时出价增加百分比
+bid_decrease_step: 0.10     # 不满足条件时出价降低百分比
+min_clicks: 20              # 分析关键词时最小点击量
+min_conversions: 2          # 分析关键词时最小转化数
+harvest_threshold: 0.10     # “收割词” 转化率阈值
+
+columns_map:
+  search_term: "Customer Search Term"
+  clicks: "Clicks"
+  impressions: "Impressions"
+  spend: "Spend"
+  sales: "7 Day Total Sales"
+  orders: "7 Day Total Orders"
