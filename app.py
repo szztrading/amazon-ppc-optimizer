@@ -36,6 +36,8 @@ if uploaded_file:
                 # 轻微 sleep 仅为更顺滑的 UI 体验（可去掉）
                 time.sleep(0.01)
         st.write("✅ 文件接收完成")
+        st.write(df[["Customer Search Term", "Clicks", "7 Day Total Orders (#)"]].head(20))
+
         recv_prog.empty()
 
         # ─── 阶段 2：解析 ───
