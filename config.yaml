@@ -8,6 +8,27 @@ min_conversions: 1          # 有 1 单就参与分析
 harvest_threshold: 0.05     # 收割词转化率 ≥5%
 
 
+# —— 词库维护（自动建议） ——
+lexicon:
+  min_clicks_for_bad: 1        # 被判“差词”的最小点击（无单）
+  min_clicks_for_good: 1       # 被判“好词”的最小点击（有单）
+  suggest_top_k: 50            # 每次最多给出多少候选词根
+  ngram_max: 2                  # 提取 1-gram + 2-gram
+  min_bad_freq: 2               # 差词里至少出现多少次才建议
+  whitelist:                    # 永远不建议加入黑名单的“保护词”
+    - brand
+    - your_brand_name
+  stopwords:                    # 通用停用词（可补充）
+    - for
+    - with
+    - the
+    - and
+    - a
+    - to
+    - of
+  # 如果你做多语种，可按市场维护 stopwords_* 清单
+
+
 columns_map:
   search_term: "Customer Search Term"
   clicks: "Clicks"
