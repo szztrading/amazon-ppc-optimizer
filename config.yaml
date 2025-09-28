@@ -13,4 +13,5 @@ columns_map:
   impressions: "Impressions"
   spend: "Spend"
   sales: "7 Day Total Sales"
-  orders: "7 Day Total Orders"
+  orders: "7 Day Total Orders (#)" 
+
