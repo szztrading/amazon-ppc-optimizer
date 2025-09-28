@@ -3,7 +3,7 @@
 target_acos: 0.50           # 放宽目标 ACOS（50%），便于找出潜力词
 bid_increase_step: 0.15     
 bid_decrease_step: 0.10     
-min_clicks: 5               # 降低点击要求（5次就参与分析）
+min_clicks: 2              # 降低点击要求（5次就参与分析）
 min_conversions: 1          # 有 1 单就参与分析
 harvest_threshold: 0.05     # 收割词转化率 ≥5%
 
