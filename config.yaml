@@ -39,14 +39,57 @@ lexicon:
   stopwords: ["for","with","the","and","a","to","of"]
 
 
-  negatives_scan:
-  phrase_roots:
-    - 12v
-    - car
-    - automotive
-    - vehicle
-    - truck
-    - water tank
-    - aquarium
-    - reptile
+negatives_scan:
+  patterns:
+    UNRELATED_CONTEXT:        # 与产品完全无关的类目/场景
+      - 12v
+      - car
+      - truck
+      - vehicle
+      - rv
+      - marine
+      - reptile
+      - aquarium
+      - fish
+      - terrarium
+      - vivarium
+      - usb
+      - dc
+      - motorcycle
+      - dog
+      - cat
+      - pet
+      - reptile
+      - camper
+      - caravan
+      - garden
+      - solar
+      - greenhouse
+
+    LOW_INTENT:              # 意图不强、转化率低的词根（买家在搜索“学习/DIY”）
+      - how
+      - tutorial
+      - diy
+      - instruction
+      - youtube
+      - guide
+      - pdf
+      - kit only
+      - cheap
+
+    COMPETITOR:              # 品牌/竞争对手词（可选是否拦截）
+      - inkbird
+      - mangrove
+      - fermzilla
+      - grainfather
+      - poweka
+
+    WRONG_PRODUCT_TYPE:      # 与“家用酿造设备”无关的设备类
+      - reptile mat
+      - car heater
+      - tire warmer
+      - underfloor
+      - foot warmer
+      - floor mat
+      - animal heater
 
