@@ -37,3 +37,16 @@ lexicon:
   min_bad_freq: 2
   whitelist: ["your_brand"]
   stopwords: ["for","with","the","and","a","to","of"]
+
+
+  negatives_scan:
+  phrase_roots:
+    - 12v
+    - car
+    - automotive
+    - vehicle
+    - truck
+    - water tank
+    - aquarium
+    - reptile
+
